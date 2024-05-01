@@ -1,3 +1,5 @@
+// This work is confirmed by Dylan Wang to be entirely his work and is in accordance with class Academic Integrity and Collaboration Policy found in the syllabus.
+
 import edu.princeton.cs.algs4.FlowEdge;
 import edu.princeton.cs.algs4.FlowNetwork;
 import edu.princeton.cs.algs4.FordFulkerson;
@@ -94,6 +96,10 @@ public class BaseballElimination {
             }
         }
 
+
+        // Counting the nodes was definetly the most challenging part of this assignment. Trying to trace out the actual flowchart and explain in code where each node goes and what it should do was extremly hard.
+        // I had to draw out the actual flowchart on a whiteboard and take it step by step. I would also take a look at some examples from the intructions as well as the lesson to help me out.
+        // Once I had the nodes visualized it was just a matter of piecing it together with the math and code. Really proud of how it turned out.
         // construct FlowNetwork
         int totalNodes = 2 + opps.length + opps.length * (opps.length - 1) / 2;
         FlowNetwork newFlow = new FlowNetwork(totalNodes);
